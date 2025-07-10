@@ -1,0 +1,46 @@
+{% extends 'tracker/base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Expense Statistics</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <canvas id="categoryChart"></canvas>
+    </div>
+    <div class="col-md-6">
+        <canvas id="dateChart"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+    const dateCtx = document.getElementById('dateChart').getContext('2d');
+
+    new Chart(categoryCtx, {
+        type: 'pie',
+        data: {
+            labels: {{ categories|safe }},
+            datasets: [{
+                label: 'Expenses by Category',
+                data: {{ category_totals|safe }},
+                backgroundColor: ['#4e79a7', '#f28e2c', '#e15759', '#76b7b2', '#59a14f']
+            }]
+        }
+    });
+
+    new Chart(dateCtx, {
+        type: 'line',
+        data: {
+            labels: {{ dates|safe }},
+            datasets: [{
+                label: 'Expenses by Date',
+                data: {{ date_totals|safe }},
+                fill: false,
+                borderColor: '#4e79a7',
+                tension: 0.1
+            }]
+        }
+    });
+</script>
+{% endblock %}
