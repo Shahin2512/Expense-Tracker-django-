@@ -4,6 +4,17 @@ A simple Django web application to manage personal expenses. Users can:
 - Filter expenses by category or date
 - Visualize data using pie and line charts with Chart.js
 
+<img width="1917" height="949" alt="Screenshot 2025-07-11 011336" src="https://github.com/user-attachments/assets/3a211c24-cdf5-4274-b042-cc72325ee8b5" />
+
+
+<img width="1919" height="941" alt="Screenshot 2025-07-11 011548" src="https://github.com/user-attachments/assets/298bfb20-d6d4-451d-bb60-e8295f4b3bee" />
+
+
+<img width="1905" height="943" alt="Screenshot 2025-07-11 011521" src="https://github.com/user-attachments/assets/7310a11b-7a54-4af3-a048-2dc664ae200e" />
+
+
+
+
 ## ⚙️ Setup Instructions
 ```bash
 # 1. Clone the repository
@@ -41,5 +52,4 @@ python manage.py runserver
 - Charts: Chart.js
 - Database: SQLite (default) 
 
-<img width="1917" height="949" alt="Screenshot 2025-07-11 011336" src="https://github.com/user-attachments/assets/cd719d63-ef94-4b86-a1d8-460cbd4325c5" />
 
