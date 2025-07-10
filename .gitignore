@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+*.env
+
+# Django
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+local_settings.py
+media
+staticfiles/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Pip
+pip-log.txt
+
+# Bytecode
+*.class
+
+# Testing
+htmlcov/
+.coverage
+.tox/
+.nox/
+
+# Migration files (optional, include only if you regenerate often)
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
