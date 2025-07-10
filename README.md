@@ -41,4 +41,5 @@ python manage.py runserver
 - Charts: Chart.js
 - Database: SQLite (default) 
 
-<img width="1917" height="949" alt="Screenshot 2025-07-11 011336" src="https://github.com/user-attachments/assets/1eb02f5c-763e-4730-b7c3-a2f91aaaaebd" />
+<img width="1917" height="949" alt="Screenshot 2025-07-11 011336" src="https://github.com/user-attachments/assets/cd719d63-ef94-4b86-a1d8-460cbd4325c5" />
+
